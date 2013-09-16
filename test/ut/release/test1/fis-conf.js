@@ -21,7 +21,11 @@ fis.config.merge({
             {
                 reg : /^\/widget\/.*\.(js|css)$/i,
                 isMod : true,
-                release : '/static/${namespace}$&'
+                release : '/static/${namespace}$&',
+                extras : {
+                    say : '123',
+                    hi  : 'wenmin'
+                }
             },
             {
                 reg : /^\/widget\/(.*\.tpl)$/i,
